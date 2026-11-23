@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Sentiment Analysis AI</h1>
+            <p>Analyze the sentiment of your text</p>
+        </header>
+
+        <main>
+            <label for="textInput">Enter your comment:</label>
+
+            <textarea
+                id="textInput"
+                placeholder="Write your comment here..."
+                rows="6"
+            ></textarea>
+
+            <div class="buttons">
+                <button id="analyzeBtn">Analyze Sentiment</button>
+                <button id="clearBtn" type="button">Clear</button>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                Analyzing your text...
+            </div>
+
+            <div id="errorMessage" class="error hidden"></div>
+
+            <section id="resultCard" class="result-card hidden">
+                <h2>Analysis Result</h2>
+
+                <p>
+                    Sentiment:
+                    <span id="sentimentResult"></span>
+                </p>
+
+                <p>
+                    Confidence:
+                    <span id="confidenceResult"></span>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by Sentiment Analysis AI</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

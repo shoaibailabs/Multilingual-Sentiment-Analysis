@@ -1,0 +1,22 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+sentiment_analysis_project_env/
+venv/
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Editor settings
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+.pytest_cache/
+.DS_Store

@@ -1,0 +1,22 @@
+
+text,expected_sentiment
+I do not like this product,negative
+I don't like this product,negative
+I did not like the movie,negative
+I didn't like the service,negative
+He does not like this,negative
+She doesn't like the food,negative
+I am not happy with this,negative
+This is not good,negative
+I really hate this,negative
+I dislike this product,negative
+I love this product,positive
+This is very good,positive
+I like this very much,positive
+The product is excellent,positive
+I am happy with this,positive
+I received the package today,neutral
+The product is on the table,neutral
+I bought this yesterday,neutral
+I don't hate this,neutral
+I do not dislike this,neutral
