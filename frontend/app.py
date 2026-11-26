@@ -24,7 +24,7 @@ def analyze():
 
     query = urllib.parse.urlencode({"text": text})
 
-    url = f"http://127.0.0.1:5000/make_prediction?{query}"
+    url = f"https://multilingual-sentiment-analysis-api.onrender.com/make_prediction"
 
     try:
         with urllib.request.urlopen(url, timeout=60) as response:
