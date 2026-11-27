@@ -12,7 +12,7 @@ with open("negation_test.csv", "r", encoding="utf-8") as file:
     print("CSV Columns:", reader.fieldnames)
 
     for row in reader:
-         row = {key.strip().replace('\ufeff', ''): value for key, value in row.items() if key}
+        row = {key.strip().replace('\ufeff', ''): value for key, value in row.items() if key}
         text = row["text"]
         expected = row["expected_sentiment"].strip().lower()
 
