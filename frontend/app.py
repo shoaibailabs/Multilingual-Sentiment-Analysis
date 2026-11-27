@@ -24,7 +24,7 @@ def analyze():
 
     query = urllib.parse.urlencode({"text": text})
 
-    url = url = f"https://multilingual-sentiment-analysis-api.onrender.com/make_prediction?{query}"
+    url  = f"https://multilingual-sentiment-analysis-api.onrender.com/make_prediction?{query}"
     try:
         with urllib.request.urlopen(url, timeout=60) as response:
             result = json.loads(
