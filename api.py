@@ -6,6 +6,9 @@ import os
 
 app = Flask(__name__)
 
+tf.config.threading.set_intra_op_parallelism_threads(1)
+tf.config.threading.set_inter_op_parallelism_threads(1)
+
 # Project folder path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
